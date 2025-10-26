@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Houston ArcGIS endpoint
-json_url="https://mycity2.houstontx.gov/pubgis01/rest/services/HEC/HEC_Active_Incidents/MapServer/0/query?f=json&cacheHint=true&resultOffset=0&resultRecordCount=500&where=1%3D1&orderByFields=CALL_TIME DESC&outFields=*&returnGeometry=false&spatialRel=esriSpatialRelIntersects"
+json_url="https://mycity2.houstontx.gov/pubgis01/rest/services/HEC/HEC_Active_Incidents/MapServer/0/query?f=json&cacheHint=true&resultOffset=0&resultRecordCount=500&where=1%3D1&orderByFields=CALL_TIME%20DESC&outFields=*&returnGeometry=false&spatialRel=esriSpatialRelIntersects"
 
 # Perform some quick sanity checks to make sure the temp files that we need exist
 echo "Sanity checks and cleaning up..."
