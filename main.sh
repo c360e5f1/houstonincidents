@@ -11,7 +11,7 @@ echo "" > ./tmp/poi.dat
 
 # Start pulling data from the ArcGIS server and store it in a temp file
 echo "Downloading JSON from ArcGIS..."
-curl "$json_url" -s --compressed -o ./tmp/houstonincidentsdata.json.tmp
+curl $json_url -s --compressed -o ./tmp/houstonincidentsdata.json.tmp
 
 # Loop through all of the objects in the JSON file and build a POI marker for each item
 # There is a better way to do this, I just threw this together on a Friday afternoon, need to revisit this later
