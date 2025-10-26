@@ -37,7 +37,7 @@ jobs:
     - name: Fetch data and build page
       id: buildpage
       run: |-
-        ./main.sh
+        bash ./main.sh
     - name: Setup Pages
       id: setuppage
       uses: actions/configure-pages@v5
