@@ -36,7 +36,7 @@ done
 echo "Building index.html..."
 cat ./static/header.dat >> ./web/index.html
 cat ./tmp/poi.dat >> ./web/index.html
-cat ./staticfooter.dat >> ./web/index.html
+cat ./static/footer.dat >> ./web/index.html
 
 # Cleanup section where we zero out our temp files, but we leave the built index.html
 echo "Cleaning up..."
