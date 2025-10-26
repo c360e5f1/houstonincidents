@@ -4,7 +4,7 @@ Web page for incidents involving Houston Fire and Houston Police. Works on mobil
 
 ```main.sh``` runs as a bash script to pull JSON data from the Houston ArcGIS server. The JSON data is then parsed for relevant information, like the latitude/longitude, incident information, response type, etc, and plots it on a basic HTML page using OpenStreetMaps and Leaflet.
 
-You can run this locally and use ```./web/index.html``` as the web page, or run it as a GitHub Workflow. 
+You can run this locally and use ```./web/index.html``` as the web page, or run it as a GitHub Workflow that exports to GitHub Pages
 
 Live demo at https://houstonincidents.com
 
