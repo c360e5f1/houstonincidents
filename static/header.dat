@@ -1,7 +1,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link rel="stylesheet" href="./leaflet/leaflet.css"
-        integrity="sha256-M6q/vj4HdhQ5yYHk9MCq9eIOJnq3aaQsiYrp3OfPMCQ=">
+    <script src="./leaflet/leaflet.js"></script>
+    <link rel="stylesheet" href="./leaflet/leaflet.css">
     <style>
         body {
             padding: 0;
@@ -12,8 +12,6 @@
             width: 100vw;
         }
     </style>
-    <script src="./leaflet/leaflet.js"
-    integrity="sha256-M3v8pcq9A7OYFbJwD+vis7ft9VkhxZzUn4jssyghIwM="></script>
 </head>
 
 <div id="map" style="width: 100%; height: 100%;""></div>
