@@ -34,7 +34,7 @@ done
 
 # Concatonate our static header, POI index, and static footer to build the index.html document
 echo "Building index.html..."
-cat ./static/header.dat | sed "s/poots/$(date -Iminutes)/" >> ./web/index.html
+cat ./static/header.dat | sed "s/poots/$(TZ="America/Chicago" date -Iminutes)/" >> ./web/index.html
 cat ./tmp/poi.dat >> ./web/index.html
 cat ./static/footer.dat >> ./web/index.html
 
