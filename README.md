@@ -6,7 +6,7 @@ Web page for incidents involving Houston Fire and Houston Police. Works on mobil
 
 ```main.sh``` runs as a bash script to pull JSON data from the Houston ArcGIS server. The JSON data is then parsed for relevant information, like the latitude/longitude, incident information, response type, etc, and plots it on a basic HTML page using OpenStreetMaps and Leaflet.
 
-You can run this locally and use ```./web/index.html``` as the web page, or run it as a GitHub Workflow that exports to GitHub Pages
+You can run this locally and use ```./web/index.html``` as the web page, or run it as a GitHub Workflow that exports to GitHub Pages. If run as a GitHub workflow, the cron can be configured to run every five minutes, but [due to instance queueing](https://upptime.js.org/blog/2021/01/22/github-actions-schedule-not-working/) realistically will only run a few times an hour. The source ArcGIS instance only updates at five minute intervals.
 
 Live demo at https://houstonincidents.com
 
