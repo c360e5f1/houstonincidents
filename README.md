@@ -19,6 +19,7 @@ This project was inspired by the following projects:
 * https://github.com/d-m-wilson/HoustonIncidents
 * https://www.arcgis.com/apps/dashboards/c51f262fdf8d43b39b6770d1b3d6aa53
 * https://mycity.maps.arcgis.com/apps/instant/basic/index.html?appid=820ec3acdbcb41d29fc2a7d4062c0820
+* https://simonwillison.net/2020/Oct/9/git-scraping/
 
 ***
 
