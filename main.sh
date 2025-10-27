@@ -24,7 +24,7 @@ jq -c '.features[].attributes' ./tmp/houstonincidentsdata.json.tmp | while read 
   poi_address=$(echo $i | jq '.Address' | sed 's/\"//g')
   poi_crossstreet=$(echo $i | jq '.CrossStreet' | sed 's/\"//g')
   poi_calltime_unix=$(echo $i | jq '.CALL_TIME' | sed 's/\"//g' | cut -c 1-10)
-  poi_calltime=$(date -d "@$poi_calltime_unix")
+  poi_calltime=$(TZ=$timezone date -d "@$poi_calltime_unix")
   poi_incidenttype=$(echo $i | jq '.IncidentType' | sed 's/\"//g')
   poi_alarmlevel=$(echo $i | jq '.ALARM_LEVEL' | sed 's/\"//g')
   poi_numunits=$(echo $i | jq '.NO_UNITS' | sed 's/\"//g')
