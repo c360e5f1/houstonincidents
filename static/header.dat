@@ -1,22 +1,24 @@
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <script src="./leaflet/leaflet.js"></script>
-    <link rel="stylesheet" href="./leaflet/leaflet.css">
-    <style>
-        body {
-            padding: 0;
-            margin: 0;
-        }
-        html, body, #map {
-            height: 100%;
-            width: 100vw;
-        }
-    </style>
+  <title>Houston Incidents Map</title>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <script src="./leaflet/leaflet.js"></script>
+  <link rel="stylesheet" href="./leaflet/leaflet.css">
+  <style>
+    body {
+      padding: 0;
+        margin: 0;
+    }
+    html, body, #map {
+      height: 100%;
+      width: 100vw;
+    }
+  </style>
 </head>
-
-<div id="map" style="width: 100%; height: 100%;""></div>
-
-<script>
+<body>
+  <div id="map" style="width: 100%; height: 100%;""></div>
+  <script>
     var map = L.map('map', {zoomControl: false}).setView([29.762778, -95.383056], 12);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
