@@ -1,7 +1,17 @@
 <head>
   <title>Houston Incidents Map</title>
-  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-  <meta content="utf-8" http-equiv="encoding">
+  <meta name="description" content="Interactive map of active Houston incidents">
+  <meta property="og:url" content="https://houstonincidents.com">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Houston Incidents Map">
+  <meta property="og:description" content="Interactive map of active Houston incidents">
+  <meta property="og:image" content="./images/a04e3530.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="houstonincidents.com">
+  <meta property="twitter:url" content="https://houstonincidents.com">
+  <meta name="twitter:title" content="Houston Incidents Map">
+  <meta name="twitter:description" content="Interactive map of active Houston incidents">
+  <meta name="twitter:image" content="./images/a04e3530.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <script src="./leaflet/leaflet.js"></script>
   <link rel="stylesheet" href="./leaflet/leaflet.css">
